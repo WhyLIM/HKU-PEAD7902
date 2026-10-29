@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<records>
+  <record>
+    <rec-number>1</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>UniProt Consortium</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>UniProt: the Universal Protein Knowledgebase in 2025</title>
+      <secondary-title>Nucleic Acids Research</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Nucleic Acids Research</full-title>
+      <abbr-1>Nucleic Acids Res</abbr-1>
+    </periodical>
+    <pages>D609-D617</pages>
+    <volume>53</volume>
+    <number>D1</number>
+    <dates>
+      <year>2025</year>
+    </dates>
+    <electronic-resource-num>10.1093/nar/gkae1010</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1093/nar/gkae1010</url>
+      </related-urls>
+    </urls>
+    <notes>Corporate author; Crossref lists the individual curators.</notes>
+  </record>
+  <record>
+    <rec-number>2</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Sievers, Fabian</author>
+        <author>Wilm, Andreas</author>
+        <author>Dineen, David</author>
+        <author>Gibson, Toby J</author>
+        <author>Karplus, Kevin</author>
+        <author>Li, Weizhong</author>
+        <author>Lopez, Rodrigo</author>
+        <author>McWilliam, Hamish</author>
+        <author>Remmert, Michael</author>
+        <author>Soding, Johannes</author>
+        <author>Thompson, Julie D</author>
+        <author>Higgins, Desmond G</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega</title>
+      <secondary-title>Molecular Systems Biology</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Molecular Systems Biology</full-title>
+      <abbr-1>Mol Syst Biol</abbr-1>
+    </periodical>
+    <pages>539</pages>
+    <volume>7</volume>
+    <number>1</number>
+    <dates>
+      <year>2011</year>
+    </dates>
+    <electronic-resource-num>10.1038/msb.2011.75</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1038/msb.2011.75</url>
+      </related-urls>
+    </urls>
+    <notes>Article number 539 (journal has no page range for this item).</notes>
+  </record>
+  <record>
+    <rec-number>3</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Madeira, Fabio</author>
+        <author>Pearce, Matt</author>
+        <author>Tivey, Adrian R N</author>
+        <author>Basutkar, Prasad</author>
+        <author>Lee, Joon</author>
+        <author>Edbali, Ossama</author>
+        <author>Madhusoodanan, Nandana</author>
+        <author>Kolesnikov, Anton</author>
+        <author>Lopez, Rodrigo</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>Search and sequence analysis tools services from EMBL-EBI in 2022</title>
+      <secondary-title>Nucleic Acids Research</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Nucleic Acids Research</full-title>
+      <abbr-1>Nucleic Acids Res</abbr-1>
+    </periodical>
+    <pages>W276-W279</pages>
+    <volume>50</volume>
+    <number>W1</number>
+    <dates>
+      <year>2022</year>
+    </dates>
+    <electronic-resource-num>10.1093/nar/gkac240</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1093/nar/gkac240</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+  <record>
+    <rec-number>4</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Cerami, Ethan</author>
+        <author>Gao, Jianjiong</author>
+        <author>Dogrusoz, Ugur</author>
+        <author>Gross, Benjamin E</author>
+        <author>Sumer, Selcuk Onur</author>
+        <author>Aksoy, Bulent Arman</author>
+        <author>Jacobsen, Anders</author>
+        <author>Byrne, Caitlin J</author>
+        <author>Heuer, Michael L</author>
+        <author>Larsson, Erik</author>
+        <author>Antipin, Yevgeniy</author>
+        <author>Reva, Boris</author>
+        <author>Goldberg, Arthur P</author>
+        <author>Sander, Chris</author>
+        <author>Schultz, Nikolaus</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>The cBio cancer genomics portal: an open platform for exploring multidimensional cancer genomics data</title>
+      <secondary-title>Cancer Discovery</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Cancer Discovery</full-title>
+      <abbr-1>Cancer Discov</abbr-1>
+    </periodical>
+    <pages>401-404</pages>
+    <volume>2</volume>
+    <number>5</number>
+    <dates>
+      <year>2012</year>
+    </dates>
+    <electronic-resource-num>10.1158/2159-8290.CD-12-0095</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1158/2159-8290.CD-12-0095</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+  <record>
+    <rec-number>5</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>de Bruijn, Ino</author>
+        <author>Kundra, Ritika</author>
+        <author>Mastrogiacomo, Brooke</author>
+        <author>Tran, Thinh Ngoc</author>
+        <author>Sikina, Luke</author>
+        <author>Mazor, Tali</author>
+        <author>Li, Xiang</author>
+        <author>Ochoa, Angelica</author>
+        <author>Zhao, Gaofei</author>
+        <author>Lai, Bryan</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>Analysis and visualization of longitudinal genomic and clinical data from the AACR Project GENIE Biopharma Collaborative in cBioPortal</title>
+      <secondary-title>Cancer Research</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Cancer Research</full-title>
+      <abbr-1>Cancer Res</abbr-1>
+    </periodical>
+    <pages>3861-3867</pages>
+    <volume>83</volume>
+    <number>23</number>
+    <dates>
+      <year>2023</year>
+    </dates>
+    <electronic-resource-num>10.1158/0008-5472.CAN-23-0816</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1158/0008-5472.CAN-23-0816</url>
+      </related-urls>
+    </urls>
+    <notes>73 authors in total; first ten listed.</notes>
+  </record>
+  <record>
+    <rec-number>6</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Hoadley, Katherine A</author>
+        <author>Yau, Christina</author>
+        <author>Hinoue, Toshinori</author>
+        <author>Wolf, Denise M</author>
+        <author>Lazar, Alexander J</author>
+        <author>Drill, Esther</author>
+        <author>Shen, Ronglai</author>
+        <author>Taylor, Alison M</author>
+        <author>Cherniack, Andrew D</author>
+        <author>Thorsson, Vesteinn</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>Cell-of-origin patterns dominate the molecular classification of 10,000 tumors from 33 types of cancer</title>
+      <secondary-title>Cell</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Cell</full-title>
+      <abbr-1>Cell</abbr-1>
+    </periodical>
+    <pages>291-304.e6</pages>
+    <volume>173</volume>
+    <number>2</number>
+    <dates>
+      <year>2018</year>
+    </dates>
+    <electronic-resource-num>10.1016/j.cell.2018.03.022</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1016/j.cell.2018.03.022</url>
+      </related-urls>
+    </urls>
+    <notes>Large consortium paper; first ten authors listed.</notes>
+  </record>
+  <record>
+    <rec-number>7</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Bouaoun, Liacine</author>
+        <author>Sonkin, Dmitriy</author>
+        <author>Ardin, Maude</author>
+        <author>Hollstein, Monica</author>
+        <author>Byrnes, Graham</author>
+        <author>Zavadil, Jiri</author>
+        <author>Olivier, Magali</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>TP53 variations in human cancers: new lessons from the IARC TP53 database and genomics data</title>
+      <secondary-title>Human Mutation</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Human Mutation</full-title>
+      <abbr-1>Hum Mutat</abbr-1>
+    </periodical>
+    <pages>865-876</pages>
+    <volume>37</volume>
+    <number>9</number>
+    <dates>
+      <year>2016</year>
+    </dates>
+    <electronic-resource-num>10.1002/humu.23035</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1002/humu.23035</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+  <record>
+    <rec-number>8</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Cho, Yunje</author>
+        <author>Gorina, Svetlana</author>
+        <author>Jeffrey, Philip D</author>
+        <author>Pavletich, Nikola P</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>Crystal structure of a p53 tumor suppressor-DNA complex: understanding tumorigenic mutations</title>
+      <secondary-title>Science</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Science</full-title>
+      <abbr-1>Science</abbr-1>
+    </periodical>
+    <pages>346-355</pages>
+    <volume>265</volume>
+    <number>5170</number>
+    <dates>
+      <year>1994</year>
+    </dates>
+    <electronic-resource-num>10.1126/science.8023157</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1126/science.8023157</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+  <record>
+    <rec-number>9</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Joerger, Andreas C</author>
+        <author>Fersht, Alan R</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>Structural biology of the tumor suppressor p53</title>
+      <secondary-title>Annual Review of Biochemistry</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Annual Review of Biochemistry</full-title>
+      <abbr-1>Annu Rev Biochem</abbr-1>
+    </periodical>
+    <pages>557-582</pages>
+    <volume>77</volume>
+    <number>1</number>
+    <dates>
+      <year>2008</year>
+    </dates>
+    <electronic-resource-num>10.1146/annurev.biochem.77.060806.091238</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1146/annurev.biochem.77.060806.091238</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+  <record>
+    <rec-number>10</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Kastenhuber, Edward R</author>
+        <author>Lowe, Scott W</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>Putting p53 in context</title>
+      <secondary-title>Cell</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Cell</full-title>
+      <abbr-1>Cell</abbr-1>
+    </periodical>
+    <pages>1062-1078</pages>
+    <volume>170</volume>
+    <number>6</number>
+    <dates>
+      <year>2017</year>
+    </dates>
+    <electronic-resource-num>10.1016/j.cell.2017.08.028</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1016/j.cell.2017.08.028</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+  <record>
+    <rec-number>11</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Sondka, Zbyslaw</author>
+        <author>Dhir, Nidhi Bindal</author>
+        <author>Carvalho-Silva, Denise</author>
+        <author>Jupe, Steven</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>COSMIC: a curated database of somatic variants and clinical data for cancer</title>
+      <secondary-title>Nucleic Acids Research</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Nucleic Acids Research</full-title>
+      <abbr-1>Nucleic Acids Res</abbr-1>
+    </periodical>
+    <pages>D1210-D1217</pages>
+    <volume>52</volume>
+    <number>D1</number>
+    <dates>
+      <year>2024</year>
+    </dates>
+    <electronic-resource-num>10.1093/nar/gkad986</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1093/nar/gkad986</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+  <record>
+    <rec-number>12</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Shrake, A</author>
+        <author>Rupley, J A</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>Environment and exposure to solvent of protein atoms. Lysozyme and insulin</title>
+      <secondary-title>Journal of Molecular Biology</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Journal of Molecular Biology</full-title>
+      <abbr-1>J Mol Biol</abbr-1>
+    </periodical>
+    <pages>351-371</pages>
+    <volume>79</volume>
+    <number>2</number>
+    <dates>
+      <year>1973</year>
+    </dates>
+    <electronic-resource-num>10.1016/0022-2836(73)90011-9</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1016/0022-2836(73)90011-9</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+  <record>
+    <rec-number>13</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Tien, Matthew Z</author>
+        <author>Meyer, Austin G</author>
+        <author>Sydykova, Dariya K</author>
+        <author>Spielman, Stephanie J</author>
+        <author>Wilke, Claus O</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>Maximum allowed solvent accessibilities of residues in proteins</title>
+      <secondary-title>PLoS ONE</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>PLoS ONE</full-title>
+      <abbr-1>PLoS One</abbr-1>
+    </periodical>
+    <pages>e80635</pages>
+    <volume>8</volume>
+    <number>11</number>
+    <dates>
+      <year>2013</year>
+    </dates>
+    <electronic-resource-num>10.1371/journal.pone.0080635</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1371/journal.pone.0080635</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+  <record>
+    <rec-number>14</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Shannon, Claude E</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>A mathematical theory of communication</title>
+      <secondary-title>Bell System Technical Journal</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>Bell System Technical Journal</full-title>
+      <abbr-1>Bell Syst Tech J</abbr-1>
+    </periodical>
+    <pages>379-423</pages>
+    <volume>27</volume>
+    <number>3</number>
+    <dates>
+      <year>1948</year>
+    </dates>
+    <electronic-resource-num>10.1002/j.1538-7305.1948.tb01338.x</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1002/j.1538-7305.1948.tb01338.x</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+  <record>
+    <rec-number>15</rec-number>
+    <ref-type name="Journal Article">17</ref-type>
+    <contributors>
+      <authors>
+        <author>Lin, J</author>
+      </authors>
+    </contributors>
+    <titles>
+      <title>Divergence measures based on the Shannon entropy</title>
+      <secondary-title>IEEE Transactions on Information Theory</secondary-title>
+    </titles>
+    <periodical>
+      <full-title>IEEE Transactions on Information Theory</full-title>
+      <abbr-1>IEEE Trans Inf Theory</abbr-1>
+    </periodical>
+    <pages>145-151</pages>
+    <volume>37</volume>
+    <number>1</number>
+    <dates>
+      <year>1991</year>
+    </dates>
+    <electronic-resource-num>10.1109/18.61115</electronic-resource-num>
+    <urls>
+      <related-urls>
+        <url>https://doi.org/10.1109/18.61115</url>
+      </related-urls>
+    </urls>
+    <notes></notes>
+  </record>
+</records>
+</xml>

@@ -1,0 +1,47 @@
+{
+  "n_mutations": 4225,
+  "n_samples": 3839,
+  "n_studies": 31,
+  "n_coding_parseable": 3295,
+  "n_missense": 2731,
+  "pct_missense": 64.6,
+  "n_nonsense": 564,
+  "pct_nonsense": 13.3,
+  "top5_codons": [
+    "R273",
+    "R248",
+    "R175",
+    "G245",
+    "R282"
+  ],
+  "top5_counts": [
+    267,
+    224,
+    167,
+    91,
+    89
+  ],
+  "top5_pct_of_missense": 30.7,
+  "top5_pct_of_all": 19.8,
+  "top5_mean_conservation": 1.0,
+  "all_mean_conservation": 0.795,
+  "conserved20pct_cutoff": 1.0,
+  "hotspots_in_top20pct": 5,
+  "hypergeom_p": 0.004905464082790783,
+  "mwu_p": 0.004760853077336476,
+  "spearman_conservation_vs_missense": {
+    "rho": 0.5082940930227714,
+    "p": 3.301961645810119e-27
+  },
+  "spearman_conservation_vs_all": {
+    "rho": 0.45662469818460716,
+    "p": 1.2257860952043133e-21
+  },
+  "mutations_per_residue_conserved_half": 13.85,
+  "mutations_per_residue_variable_half": 1.98,
+  "mutations_per_residue_dbd": 15.53,
+  "mutations_per_residue_outside_dbd": 1.62,
+  "n_invariant_residues": 137,
+  "dbd_share_of_all_mutations": 90.0,
+  "dbd_share_of_residues": 48.6
+}

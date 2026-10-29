@@ -1,0 +1,8 @@
+{
+  "alignment_length": 409,
+  "human_length": 393,
+  "mean_conservation": 0.7951113237000904,
+  "mean_conservation_dbd": 0.8795999592422086,
+  "mean_conservation_outside_dbd": 0.7152235544498696,
+  "conserved_positions_ge_0_8": 188
+}

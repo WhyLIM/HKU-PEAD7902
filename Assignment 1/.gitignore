@@ -1,0 +1,11 @@
+.DS_Store
+.venv*/
+.uv-cache/
+.uv-python/
+.Rlib/
+__pycache__/
+*.pyc
+data/mutations/raw/
+results/fetch_mutations.log
+results/pymol/*.pse
+Rplots.pdf

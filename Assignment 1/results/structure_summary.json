@@ -1,0 +1,9 @@
+{
+  "structure": "1TUP (human p53 core domain-DNA complex)",
+  "chain": "B (auto-selected: most DNA contacts)",
+  "chain_residues": "96-289",
+  "n_dna_atoms": 891,
+  "hotspots_buried": 3,
+  "hotspots_dna_contact": 2,
+  "hotspots_zinc": 0
+}

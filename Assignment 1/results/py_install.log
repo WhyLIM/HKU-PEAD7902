@@ -1,0 +1,13 @@
+Using Python 3.12.15 environment at: .venv-py
+Resolved 14 packages in 19.53s
+Downloading pandas (10.7MiB)
+Downloading biopython (2.6MiB)
+Downloading matplotlib (8.9MiB)
+Downloading fonttools (3.0MiB)
+Downloading pillow (4.6MiB)
+ Downloaded biopython
+ Downloaded fonttools
+error: Failed to download `pandas==3.1.0`
+  cause: Failed to extract archive: pandas-3.1.0-cp312-cp312-macosx_11_0_arm64.whl
+  cause: I/O operation failed during extraction
+  cause: failed to open file `/Users/whylim/HKU/Assignments/PEAD7902/Assignment 1/dsh/.uv-cache/.tmplKET9p/pandas/tests/io/excel/test_odf.py`: No such file or directory (os error 2)

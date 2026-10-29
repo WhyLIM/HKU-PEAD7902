@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "auditable": false,
+  "verdict": "NOT AUDITABLE",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 0,
+    "exemptions": 0
+  },
+  "errors": [
+    "panel a: panel bbox_pt must have positive width and height",
+    "panel b: panel bbox_pt must have positive width and height",
+    "panel c: panel bbox_pt must have positive width and height",
+    "at least one panel rectangle is required"
+  ],
+  "findings": []
+}
