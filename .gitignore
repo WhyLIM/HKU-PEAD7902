@@ -3,3 +3,4 @@
 **/.Rlib/
 **/__pycache__/
 *.pyc
+*.log
