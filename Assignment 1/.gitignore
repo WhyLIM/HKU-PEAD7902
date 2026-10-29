@@ -6,4 +6,5 @@
 __pycache__/
 *.pyc
 data/mutations/raw/
-results/fetch_mutations.log
+*.log
+*_private.md

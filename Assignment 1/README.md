@@ -78,7 +78,6 @@ Report utilities (not needed for the figures):
 ## Not included
 
 - `data/mutations/raw/` (cBioPortal JSON cache; re-download with script 04)
-- `results/pymol/*.pse` (PyMOL sessions)
 - virtual environments and package caches
 
 The Word exports are included under `word/`; the figure PDFs are in `assets/r/pdf/`.
