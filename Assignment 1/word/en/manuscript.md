@@ -105,7 +105,7 @@ Enrichment among invariant codons was tested with a hypergeometric test, hotspot
 
 The core domain with the most DNA contacts was selected from PDB entry 1TUP [@cho1994]; Shrake–Rupley solvent accessibility [@shrake1973] was computed in Biopython, with residue maxima from Tien et al. [@tien2013].
 
-Rather than imposing a continuous domain partition, we used the UniProt feature annotation [@uniprot2025]: TAD 1–44 (transcription activation), DBD 102–292 (DNA binding) and TET 325–356 (oligomerization); all remaining residues are grouped as "other". TADI (17–25), TADII (48–56), the proline-rich bias (69–90), NLS (305–321) and NES (339–350) are motifs annotated within this map and are not treated as separate domains; TADII lies just outside the 1–44 TAD region, as annotated by UniProt. The 1TUP core domain [@cho1994] is the structural counterpart of the DBD. Analyses used Python 3.9.6 with Biopython 1.85 and NumPy 2.0.2, and R 4.6.1 with ggplot2 4.0.3 and patchwork 1.3.2; Figure 6a,b were rendered with open-source PyMOL 3.2.0.2. The cBioPortal API was accessed on 25 October 2026.
+Domain assignment follows the UniProt feature annotation [@uniprot2025]: TAD 1–44 (transcription activation), DBD 102–292 (DNA binding) and TET 325–356 (oligomerization); all remaining residues are grouped as "other". The 1TUP core domain [@cho1994] is the structural counterpart of the DBD. Analyses used Python 3.9.6 with Biopython 1.85 and NumPy 2.0.2, and R 4.6.1 with ggplot2 4.0.3 and patchwork 1.3.2; Figure 6a,b were rendered with open-source PyMOL 3.2.0.2. The cBioPortal API was accessed on 25 October 2026.
 
 # Data Availability
 

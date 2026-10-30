@@ -95,7 +95,7 @@ TP53 是突变频率最高的抑癌基因。本文比对 6 种脊椎动物的 p5
 
 从 PDB 1TUP [4] 中自动选取与 DNA 接触最多的核心结构域；用 Biopython 计算 Shrake–Rupley 溶剂可及性 [14]，残基最大可及表面积取自 Tien 等 [15]。
 
-本文不强行采用连续的结构域划分，而是直接使用 UniProt 的功能注释 [1]：TAD 1–44（转录激活）、DBD 102–292（DNA 结合）与 TET 325–356（寡聚化）；其余残基统一归为 Other。TADI（17–25）、TADII（48–56）、富含脯氨酸区（69–90）、NLS（305–321）与 NES（339–350）是该图谱中标注的基序，不作为独立结构域；其中 TADII 按 UniProt 注释位于 1–44 的 TAD 之外。1TUP 解析的核心结构域 [4] 是该 DBD 的结构对应区域。分析使用 Python 3.9.6（Biopython 1.85、NumPy 2.0.2）与 R 4.6.1（ggplot2 4.0.3、patchwork 1.3.2）；图 6a,b 使用开源 PyMOL 3.2.0.2 渲染；cBioPortal API 访问日期为 2026-10-25。
+本文采用 UniProt 的功能注释进行结构域划分 [1]：TAD 1–44（转录激活）、DBD 102–292（DNA 结合）与 TET 325–356（寡聚化）；其余残基统一归为 Other。1TUP 解析的核心结构域 [4] 是该 DBD 的结构对应区域。分析使用 Python 3.9.6（Biopython 1.85、NumPy 2.0.2）与 R 4.6.1（ggplot2 4.0.3、patchwork 1.3.2）；图 6a,b 使用开源 PyMOL 3.2.0.2 渲染；cBioPortal API 访问日期为 2026-10-25。
 
 ## 数据可用性
 
