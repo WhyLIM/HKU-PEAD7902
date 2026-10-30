@@ -32,11 +32,11 @@ Six p53 orthologues (human, cattle, mouse, chicken, frog, zebrafish; UniProt [@u
 
 ![](../../assets/r/fig1_alignment.png){width=15cm}
 
-%% Image Caption **Figure 1.** Multiple sequence alignment of six p53 orthologues. Cells are shaded by column conservation score (darker = more conserved) and warm-grey cells are alignment gaps. The DBD is visibly darker than the terminal regions. Six vertebrate orthologues were aligned with Clustal Omega.
+%% Image Caption **Figure 1.** Multiple sequence alignment of six p53 orthologues. Cells are shaded by column conservation score (darker = more conserved) and warm-grey cells are alignment gaps. The DBD is visibly darker than the terminal regions; grey blocks mark all other residues. Six vertebrate orthologues were aligned with Clustal Omega.
 
 ![](../../assets/r/fig2_cross_species.png){width=15cm}
 
-%% Image Caption **Figure 2.** Conservation across species and domains. (a) Clustal Omega guide tree with branch lengths. (b) Identity to human p53 over the full length and within the DBD. (c) Conservation score per domain (boxes: median and quartiles; dots: individual residues).
+%% Image Caption **Figure 2.** Conservation across species and regions. (a) Clustal Omega guide tree with branch lengths. (b) Identity to human p53 over the full length and within the DBD. (c) Conservation score per UniProt feature (TAD, DBD, TET) and all other residues (boxes: median and quartiles; dots: individual residues).
 
 %% Table Caption **Table 1. Sequences used and identity to human p53.**
 
@@ -73,7 +73,7 @@ All five are invariant across the six vertebrates and lie in the DBD; five rando
 
 ![](../../assets/r/fig4_landscape.png){width=15cm}
 
-%% Image Caption **Figure 4.** Conservation and mutation density along p53. Upper panel: per-residue conservation with the DBD shaded. Lower panel: missense mutations per codon (log scale); hotspots in red. Domains are drawn below.
+%% Image Caption **Figure 4.** Conservation and mutation density along p53. Upper panel: per-residue conservation with the DBD shaded. Lower panel: missense mutations per codon (log scale); hotspots in red. UniProt features are marked below; grey blocks mark all other residues.
 
 ![](../../assets/r/fig5_conservation_vs_mutation.png){width=15cm}
 
@@ -105,7 +105,7 @@ Enrichment among invariant codons was tested with a hypergeometric test, hotspot
 
 The core domain with the most DNA contacts was selected from PDB entry 1TUP [@cho1994]; Shrake–Rupley solvent accessibility [@shrake1973] was computed in Biopython, with residue maxima from Tien et al. [@tien2013].
 
-Domain boundaries follow a UniProt-anchored segmentation: DBD 102–292 and TET 325–356 are taken from UniProt [@uniprot2025]; TAD1 (1–40) and TAD2 (41–60) follow the conventional schematic, PRD (61–101) spans the proline-rich region and the adjacent segment up to the DBD start, and linker (293–324) and CTD (357–393) fill the remaining regions. The 1TUP core domain [@cho1994] is the structural counterpart of the DBD. Analyses used Python 3.9.6 with Biopython 1.85 and NumPy 2.0.2, and R 4.6.1 with ggplot2 4.0.3 and patchwork 1.3.2; Figure 6a,b were rendered with open-source PyMOL 3.2.0.2. The cBioPortal API was accessed on 25 October 2026.
+Rather than imposing a continuous domain partition, we used the UniProt feature annotation [@uniprot2025]: TAD 1–44 (transcription activation), DBD 102–292 (DNA binding) and TET 325–356 (oligomerization); all remaining residues are grouped as "other". TADI (17–25), TADII (48–56), the proline-rich bias (69–90), NLS (305–321) and NES (339–350) are motifs annotated within this map and are not treated as separate domains; TADII lies just outside the 1–44 TAD region, as annotated by UniProt. The 1TUP core domain [@cho1994] is the structural counterpart of the DBD. Analyses used Python 3.9.6 with Biopython 1.85 and NumPy 2.0.2, and R 4.6.1 with ggplot2 4.0.3 and patchwork 1.3.2; Figure 6a,b were rendered with open-source PyMOL 3.2.0.2. The cBioPortal API was accessed on 25 October 2026.
 
 # Data Availability
 

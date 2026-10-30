@@ -23,12 +23,11 @@ source(file.path(SKILL, "panel_alignment.R"))
 
 INK   <- "#1F2933"; MUTED <- "#7B8794"; GRIDC <- "#E4E7EB"
 HOT   <- "#B3261E"; TEAL  <- "#2F7F73"; BLUE  <- "#335C81"
-DOM   <- c(TAD1 = "#E8A87C", TAD2 = "#F0C687", PRD = "#E3CF8F",
-           DBD = "#3E8E7E", Linker = "#9BC1BC", TET = "#4F6D8C", CTD = "#7B6D8D")
+DOM   <- c(TAD = "#E8A87C", DBD = "#3E8E7E", TET = "#4F6D8C", Other = "#D9D9D9")
 DOMAINS <- tibble::tribble(
   ~domain, ~start, ~end,
-  "TAD1", 1, 40, "TAD2", 41, 60, "PRD", 61, 101, "DBD", 102, 292,
-  "Linker", 293, 324, "TET", 325, 356, "CTD", 357, 393)
+  "TAD", 1, 44, "Other", 45, 101, "DBD", 102, 292,
+  "Other", 293, 324, "TET", 325, 356, "Other", 357, 393)
 SPECIES <- c(P53_HUMAN = "Human", P53_BOVIN = "Cattle", P53_MOUSE = "Mouse",
              P53_CHICK = "Chicken", P53_XENLA = "Frog", P53_DANRE = "Zebrafish")
 ORDER <- unname(SPECIES[c("P53_HUMAN", "P53_BOVIN", "P53_MOUSE",
@@ -151,7 +150,7 @@ figure1 <- function() {
   p2 <- ggplot(dom) +
     geom_rect(aes(xmin = xmin, xmax = xmax, ymin = 0.05, ymax = 0.95, fill = domain),
               colour = "white", linewidth = 0.2) +
-    geom_text(aes(x = (xmin + xmax) / 2, y = 0.5, label = domain),
+    geom_text(aes(x = (xmin + xmax) / 2, y = 0.5, label = ifelse(as.character(domain) == "Other", "", as.character(domain))),
               colour = "white", fontface = "bold", size = pt(4.6)) +
     scale_fill_manual(values = DOM, guide = "none") +
     scale_x_continuous(expand = c(0, 0), limits = c(0.5, ncol + 0.5)) +
@@ -384,7 +383,7 @@ figure4 <- function() {
   p3 <- ggplot(dom) +
     geom_rect(aes(xmin = start, xmax = end + 1, ymin = 0.08, ymax = 0.92, fill = domain),
               colour = "white", linewidth = 0.2) +
-    geom_text(aes(x = (start + end + 1) / 2, y = 0.5, label = domain),
+    geom_text(aes(x = (start + end + 1) / 2, y = 0.5, label = ifelse(as.character(domain) == "Other", "", as.character(domain))),
               colour = "white", fontface = "bold", size = pt(4.6)) +
     scale_fill_manual(values = DOM, guide = "none") +
     scale_x_continuous(limits = c(0, 394), expand = c(0, 0), breaks = seq(0, 350, 50)) +

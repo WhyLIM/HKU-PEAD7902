@@ -29,8 +29,8 @@ HUMAN = "sp|P04637|P53_HUMAN"
 AA = "ACDEFGHIKLMNPQRSTVWY"
 
 DOMAINS = [
-    ("TAD1", 1, 40), ("TAD2", 41, 60), ("PRD", 61, 101),
-    ("DBD", 102, 292), ("Linker", 293, 324), ("TET", 325, 356), ("CTD", 357, 393),
+    ("TAD", 1, 44), ("Other", 45, 101), ("DBD", 102, 292),
+    ("Other", 293, 324), ("TET", 325, 356), ("Other", 357, 393),
 ]
 
 

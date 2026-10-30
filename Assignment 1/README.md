@@ -69,7 +69,7 @@ Report utilities (not needed for the figures):
 | Figure | File | Content |
 |---|---|---|
 | 1 | `assets/r/fig1_alignment.png` | six-species alignment coloured by conservation |
-| 2 | `assets/r/fig2_cross_species.png` | guide tree, identity, per-domain conservation |
+| 2 | `assets/r/fig2_cross_species.png` | guide tree, identity, per-feature conservation |
 | 3 | `assets/r/fig3_hotspots.png` | hotspot substitution matrix and consequence classes |
 | 4 | `assets/r/fig4_landscape.png` | conservation and mutation density along p53 |
 | 5 | `assets/r/fig5_conservation_vs_mutation.png` | conservation versus mutation density |
@@ -86,5 +86,5 @@ The Word exports are included under `word/`; the figure PDFs are in `assets/r/pd
 
 - The mutation table is de-duplicated by sample and protein change; hotspots are ranked by missense count.
 - Conservation is `1 - H / log2(20)`; invariant columns score 1.0.
-- Domain boundaries use UniProt DBD 102–292 and TET 325–356; the remaining boundaries follow the conventional schematic.
+- Regions follow UniProt features: TAD 1–44, DBD 102–292 and TET 325–356; all other residues are grouped as "other".
 - The reports use 15 DOI-verified references (see `references/`).

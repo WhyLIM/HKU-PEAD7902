@@ -32,11 +32,11 @@ TP53 是突变频率最高的抑癌基因。本文比对 6 种脊椎动物的 p5
 
 ![](../../assets/r/fig1_alignment.png){width=14cm}
 
-%% Image Caption **图 1.** 六种 p53 直系同源序列的多重比对。 每个格子按该比对列的保守性着色（越深越保守），米色格子为比对空位。DBD 明显比两端区域更暗。六条序列由 Clustal Omega 比对。
+%% Image Caption **图 1.** 六种 p53 直系同源序列的多重比对。 每个格子按该比对列的保守性着色（越深越保守），米色格子为比对空位。DBD 明显比两端区域更暗；灰色块为其余残基。六条序列由 Clustal Omega 比对。
 
 ![](../../assets/r/fig2_cross_species.png){width=14cm}
 
-%% Image Caption **图 2.** 跨物种与跨结构域的保守性。 (a) Clustal Omega 指导树。(b) 与人 p53 的全长一致性及 DBD 内一致性。(c) 各结构域的保守性分布。
+%% Image Caption **图 2.** 跨物种与不同区域的保守性。 (a) Clustal Omega 指导树。(b) 与人 p53 的全长一致性及 DBD 内一致性。(c) 各 UniProt 功能区域（TAD、DBD、TET）及其余残基的保守性分布。
 
 %% Table Caption **表 1. 所用序列及与人 p53 的一致性。**
 
@@ -73,7 +73,7 @@ TP53 是突变频率最高的抑癌基因。本文比对 6 种脊椎动物的 p5
 
 ![](../../assets/r/fig4_landscape.png){width=14cm}
 
-%% Image Caption **图 4.** p53 沿序列的保守性与突变密度。 上：逐残基保守性，阴影为 DBD；下：各密码子的错义突变数（对数坐标），热点标红；最下方为结构域示意图。
+%% Image Caption **图 4.** p53 沿序列的保守性与突变密度。 上：逐残基保守性，阴影为 DBD；下：各密码子的错义突变数（对数坐标），热点标红；最下方为 UniProt 功能区域示意；灰色块为其余残基。
 
 ![](../../assets/r/fig5_conservation_vs_mutation.png){width=14cm}
 
@@ -105,7 +105,7 @@ TP53 是突变频率最高的抑癌基因。本文比对 6 种脊椎动物的 p5
 
 从 PDB 1TUP [@cho1994] 中自动选取与 DNA 接触最多的核心结构域；用 Biopython 计算 Shrake–Rupley 溶剂可及性 [@shrake1973]，残基最大可及表面积取自 Tien 等 [@tien2013]。
 
-结构域边界采用以 UniProt 为锚的划分：DBD 102–292 与 TET 325–356 取自 UniProt [@uniprot2025]；TAD1（1–40）与 TAD2（41–60）沿用常规示意，PRD（61–101）覆盖富含脯氨酸区域及其至 DBD 起点之间的相邻片段，Linker（293–324）与 CTD（357–393）补齐其余区域。1TUP 解析的核心结构域 [@cho1994] 是该 DBD 的结构对应区域。分析使用 Python 3.9.6（Biopython 1.85、NumPy 2.0.2）与 R 4.6.1（ggplot2 4.0.3、patchwork 1.3.2）；图 6a,b 使用开源 PyMOL 3.2.0.2 渲染；cBioPortal API 访问日期为 2026-10-25。
+本文不强行采用连续的结构域划分，而是直接使用 UniProt 的功能注释 [@uniprot2025]：TAD 1–44（转录激活）、DBD 102–292（DNA 结合）与 TET 325–356（寡聚化）；其余残基统一归为 Other。TADI（17–25）、TADII（48–56）、富含脯氨酸区（69–90）、NLS（305–321）与 NES（339–350）是该图谱中标注的基序，不作为独立结构域；其中 TADII 按 UniProt 注释位于 1–44 的 TAD 之外。1TUP 解析的核心结构域 [@cho1994] 是该 DBD 的结构对应区域。分析使用 Python 3.9.6（Biopython 1.85、NumPy 2.0.2）与 R 4.6.1（ggplot2 4.0.3、patchwork 1.3.2）；图 6a,b 使用开源 PyMOL 3.2.0.2 渲染；cBioPortal API 访问日期为 2026-10-25。
 
 # 数据可用性
 
