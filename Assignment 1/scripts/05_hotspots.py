@@ -127,11 +127,15 @@ def main():
         spearman_conservation_vs_missense=dict(rho=float(rho_missense.correlation),
                                                p=float(rho_missense.pvalue)),
         spearman_conservation_vs_all=dict(rho=float(rho_all.correlation), p=float(rho_all.pvalue)),
-        mutations_per_residue_conserved_half=round(float(conserved_half["n_all"].sum() / len(conserved_half)), 2),
-        mutations_per_residue_variable_half=round(float(variable_half["n_all"].sum() / len(variable_half)), 2),
-        mutations_per_residue_dbd=round(float(background[background.domain == "DBD"]["n_all"].sum()
+        all_mutations_per_residue_conserved_half=round(float(conserved_half["n_all"].sum() / len(conserved_half)), 2),
+        all_mutations_per_residue_variable_half=round(float(variable_half["n_all"].sum() / len(variable_half)), 2),
+        all_mutations_per_residue_dbd=round(float(background[background.domain == "DBD"]["n_all"].sum()
                                                / (background.domain == "DBD").sum()), 2),
-        mutations_per_residue_outside_dbd=round(float(background[background.domain != "DBD"]["n_all"].sum()
+        all_mutations_per_residue_outside_dbd=round(float(background[background.domain != "DBD"]["n_all"].sum()
+                                                      / (background.domain != "DBD").sum()), 2),
+        missense_per_residue_dbd=round(float(background[background.domain == "DBD"]["n_missense"].sum()
+                                              / (background.domain == "DBD").sum()), 2),
+        missense_per_residue_outside_dbd=round(float(background[background.domain != "DBD"]["n_missense"].sum()
                                                       / (background.domain != "DBD").sum()), 2),
         n_invariant_residues=int((background["conservation"] >= 0.999).sum()),
         dbd_share_of_all_mutations=round(100 * float(background[background.domain == "DBD"]["n_all"].sum())

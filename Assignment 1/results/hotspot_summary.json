@@ -37,10 +37,12 @@
     "rho": 0.45662469818460716,
     "p": 1.2257860952043133e-21
   },
-  "mutations_per_residue_conserved_half": 13.85,
-  "mutations_per_residue_variable_half": 1.98,
-  "mutations_per_residue_dbd": 15.53,
-  "mutations_per_residue_outside_dbd": 1.62,
+  "all_mutations_per_residue_conserved_half": 13.85,
+  "all_mutations_per_residue_variable_half": 1.98,
+  "all_mutations_per_residue_dbd": 15.53,
+  "all_mutations_per_residue_outside_dbd": 1.62,
+  "missense_per_residue_dbd": 13.83,
+  "missense_per_residue_outside_dbd": 0.44,
   "n_invariant_residues": 137,
   "dbd_share_of_all_mutations": 90.0,
   "dbd_share_of_residues": 48.6
