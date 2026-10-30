@@ -29,9 +29,11 @@ HUMAN = "sp|P04637|P53_HUMAN"
 AA = "ACDEFGHIKLMNPQRSTVWY"
 
 DOMAINS = [
-    ("TAD", 1, 44), ("Other", 45, 101), ("DBD", 102, 292),
-    ("Other", 293, 324), ("TET", 325, 356), ("Other", 357, 393),
+    (row.domain, int(row.start), int(row.end))
+    for row in pd.read_csv(ROOT / "data" / "domain_map.csv").itertuples()
 ]
+
+DBD_START, DBD_END = next((start, end) for name, start, end in DOMAINS if name == "DBD")
 
 
 def domain_of(pos):
@@ -99,7 +101,7 @@ def main():
 
     # pairwise identity over the whole alignment and over the DBD only
     rows = []
-    dbd_cols = [c for c in range(ncol) if df.iloc[c].human_pos and 102 <= df.iloc[c].human_pos <= 292]
+    dbd_cols = [c for c in range(ncol) if df.iloc[c].human_pos and DBD_START <= df.iloc[c].human_pos <= DBD_END]
     for other in ids:
         if other == HUMAN:
             continue

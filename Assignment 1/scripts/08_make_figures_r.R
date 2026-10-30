@@ -9,8 +9,8 @@ if (dir.exists(local_lib)) .libPaths(c(local_lib, .libPaths()))
 
 suppressPackageStartupMessages({
   library(ggplot2); library(dplyr); library(tidyr); library(readr)
-  library(patchwork); library(scales); library(grid)
-  library(ape); library(ggrepel); library(jsonlite); library(png); library(cowplot)
+  library(patchwork); library(grid)
+  library(ape); library(jsonlite); library(png)
 })
 TBL  <- file.path(ROOT, "results", "tables")
 OUT  <- file.path(ROOT, "assets", "r")
@@ -18,16 +18,12 @@ PDF  <- file.path(OUT, "pdf")
 dir.create(OUT, recursive = TRUE, showWarnings = FALSE)
 dir.create(PDF, recursive = TRUE, showWarnings = FALSE)
 
-SKILL <- path.expand("~/.agents/skills/nature-figure/scripts")
-source(file.path(SKILL, "panel_alignment.R"))
 
 INK   <- "#1F2933"; MUTED <- "#7B8794"; GRIDC <- "#E4E7EB"
 HOT   <- "#B3261E"; TEAL  <- "#2F7F73"; BLUE  <- "#335C81"
 DOM   <- c(TAD = "#E8A87C", DBD = "#3E8E7E", TET = "#4F6D8C", Other = "#D9D9D9")
-DOMAINS <- tibble::tribble(
-  ~domain, ~start, ~end,
-  "TAD", 1, 44, "Other", 45, 101, "DBD", 102, 292,
-  "Other", 293, 324, "TET", 325, 356, "Other", 357, 393)
+DOMAINS <- readr::read_csv(file.path(ROOT, "data", "domain_map.csv"), show_col_types = FALSE)
+stopifnot(all(DOMAINS$domain %in% names(DOM)))
 SPECIES <- c(P53_HUMAN = "Human", P53_BOVIN = "Cattle", P53_MOUSE = "Mouse",
              P53_CHICK = "Chicken", P53_XENLA = "Frog", P53_DANRE = "Zebrafish")
 ORDER <- unname(SPECIES[c("P53_HUMAN", "P53_BOVIN", "P53_MOUSE",
@@ -56,27 +52,8 @@ theme_nf <- function(base = 6.5) {
 }
 theme_set(theme_nf())
 
-save_r <- function(p, name, w_mm, h_mm, multi = TRUE, exemptions = list()) {
+save_r <- function(p, name, w_mm, h_mm) {
   w <- w_mm / 25.4; h <- h_mm / 25.4
-  if (multi) {
-    # patchworkGrob needs a real device with the final physical size; a temporary
-    # PDF probe avoids the stray Rplots.pdf that R's default device would create.
-    probe <- tempfile(fileext = ".pdf")
-    grDevices::pdf(probe, width = w, height = h, useDingbats = FALSE)
-    tryCatch(require_patchwork_panel_alignment(
-      p,
-      manifest_path = file.path(OUT, paste0(name, ".alignment-layout.json")),
-      report_path = file.path(OUT, paste0(name, ".alignment.json")),
-      overlay_svg = file.path(OUT, paste0(name, ".alignment.svg")),
-      width_in = w, height_in = h,
-      exemptions = exemptions,
-      audit_script = file.path(SKILL, "audit_panel_alignment.py"),
-      python = Sys.which("python3"),
-      tolerance_pt = 1.5, gutter_tolerance_pt = 1.5, strict = TRUE),
-      error = function(e) message("patchwork alignment helper unavailable: ", conditionMessage(e)))
-    grDevices::dev.off()
-    unlink(probe)
-  }
   ragg::agg_png(file.path(OUT, paste0(name, ".png")), width = w, height = h,
                 units = "in", res = 600, background = "white")
   print(p); dev.off()
@@ -173,7 +150,7 @@ figure1 <- function() {
   fig <- fig +
     plot_annotation(title = "Conservation across six p53 orthologues",
                     theme = theme(plot.title = element_text(size = 7.5, face = "bold")))
-  save_r(fig, "fig1_alignment", 180, 108, multi = FALSE)
+  save_r(fig, "fig1_alignment", 180, 108)
 }
 
 # ------------------------------------------------------------------ figure 2 --
@@ -251,7 +228,7 @@ figure2 <- function() {
   fig <- fig +
     plot_annotation(title = "p53 conservation peaks in the DNA-binding domain",
                     tag_levels = "a")
-  save_r(fig, "fig2_cross_species", 180, 64, multi = TRUE)
+  save_r(fig, "fig2_cross_species", 180, 64)
 }
 
 # ------------------------------------------------------------------ figure 3 --
@@ -338,7 +315,7 @@ figure3 <- function() {
   fig <- fig +
     plot_annotation(title = "Five missense hotspots and their substitution spectra",
                     tag_levels = "a")
-  save_r(fig, "fig3_hotspots", 180, 84, multi = TRUE)
+  save_r(fig, "fig3_hotspots", 180, 84)
 }
 
 # ------------------------------------------------------------------ figure 4 --
@@ -395,7 +372,7 @@ figure4 <- function() {
   # one stacked figure with a shared x axis (no a/b/c tags, as in Figure 1)
   fig <- (p1 / p2 / p3) + plot_layout(heights = c(1.15, 1.45, 0.26)) +
     plot_annotation(title = "Conservation and somatic mutation density along p53")
-  save_r(fig, "fig4_landscape", 180, 88, multi = TRUE)
+  save_r(fig, "fig4_landscape", 180, 88)
 }
 
 # ------------------------------------------------------------------ figure 5 --
@@ -466,7 +443,7 @@ figure5 <- function() {
   fig <- fig +
     plot_annotation(title = "Conservation predicts where mutations accumulate",
                     tag_levels = "a")
-  save_r(fig, "fig5_conservation_vs_mutation", 180, 72, multi = TRUE)
+  save_r(fig, "fig5_conservation_vs_mutation", 180, 72)
 }
 
 # ------------------------------------------------------------------ figure 6 --

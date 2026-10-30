@@ -14,7 +14,7 @@ and classifies each hotspot as DNA-contact / zinc-site / structural.
 Outputs
   results/tables/structure_residues.csv
   results/tables/structure_hotspots.csv
-  results/tables/structure_coords.csv   (CA trace + DNA atoms for figure 5)
+  results/tables/structure_coords.csv   (CA trace + DNA atoms for figure 6)
 """
 import pathlib
 
@@ -87,10 +87,8 @@ def main():
             continue
         sasa = float(res.sasa) if hasattr(res, "sasa") else np.nan
         rel = 100 * sasa / MAX_SASA.get(resname, 200)
-        d_dna = min((a - b for a in atoms for b in dna_atoms),
-                    key=lambda v: v, default=None)
         d_dna = min(np.linalg.norm(a.coord - b.coord) for a in atoms for b in dna_atoms)
-        d_zn = min(np.linalg.norm(a.coord - z.coord) for a in atoms for z in zn)
+        d_zn = min((np.linalg.norm(a.coord - z.coord) for a in atoms for z in zn), default=float("nan"))
         anchor = res["CB"] if "CB" in res else res["CA"]
         rows.append(dict(resnum=resnum, aa3=resname, sasa=round(sasa, 1),
                          rel_sasa=round(rel, 1), dist_dna=round(float(d_dna), 2),
@@ -104,7 +102,7 @@ def main():
     hotspots = pd.read_csv(TBL / "hotspots.csv")
     h = hotspots.merge(df, left_on="pos", right_on="resnum", how="left")
 
-    # Functional classes follow the standard p53 classification (Joerger & Fersht 2007;
+    # Functional classes follow the standard p53 classification (Joerger & Fersht 2008;
     # IARC TP53 database): direct DNA contacts, zinc ligands and buried structural residues.
     # The measured distances below are consistent with these assignments.
     DNA_CONTACT = {120, 241, 248, 273, 276, 277, 280, 283}

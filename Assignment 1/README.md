@@ -12,6 +12,7 @@ data/
   sequences/      six UniProt FASTA files
   mutations/      merged, de-duplicated mutation table (TSV)
   structure/      1TUP.pdb
+  domain_map.csv  shared TAD/DBD/TET/Other boundaries
 results/
   alignment/      Clustal Omega alignment, guide tree, job id
   tables/         conservation, codon counts, hotspots, structure metrics
@@ -36,7 +37,7 @@ The cBioPortal raw JSON cache (~3.4 MB) is **not** included; `scripts/04_fetch_m
 ## Requirements
 
 - Python 3.9.6 with `requirements.txt` (Biopython, pandas, NumPy, SciPy, requests)
-- R 4.6.1 with ggplot2, patchwork, ape, dplyr, tidyr, readr, scales, ggrepel, jsonlite, ragg and png
+- R 4.6.1 with ggplot2, patchwork, ape, dplyr, tidyr, readr, jsonlite, ragg and png
 - Optional: open-source PyMOL 3.2.0.2, only to re-render Figure 6a,b; the pre-rendered PNGs in `results/pymol/` are included
 
 ## Reproducing the analysis

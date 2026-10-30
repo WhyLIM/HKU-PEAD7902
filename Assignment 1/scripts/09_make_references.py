@@ -2,7 +2,7 @@
 """Build EndNote-importable reference files (RIS and EndNote XML) from the
 references used in the report, after verifying them against Crossref.
 
-Each record below was checked against api.crossref.org by DOI on 2026-10-26;
+Each record below was checked against api.crossref.org by DOI on 2026-10-28;
 title, journal, year, volume, issue, pages and author order follow the
 publisher metadata. Two errors in the first draft were corrected:
   * Hoadley et al. 2018 had a wrong DOI (10.1016/j.cell.2018.03.046 belongs to

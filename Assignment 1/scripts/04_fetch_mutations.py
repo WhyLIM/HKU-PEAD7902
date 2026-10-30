@@ -45,7 +45,10 @@ def main():
     def fetch_study(study):
         cache = RAW / f"{study}.json"
         if cache.exists() and cache.stat().st_size > 2:
-            return study, json.loads(cache.read_text())
+            try:
+                return study, json.loads(cache.read_text())
+            except (OSError, json.JSONDecodeError):
+                pass
         try:
             data = get(
                 f"{API}/molecular-profiles/{study}_mutations/mutations",
